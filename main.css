@@ -1,0 +1,41 @@
+
+.block1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.block1:hover{
+    background-color: yellow;
+}
+.block2{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+.block1:hover +.block2{
+    background-color: black;
+}
+.block2:hover{
+    background-color: blueviolet;
+    
+}
+
+input.SReadMoreRadio{
+    display: none;
+}
+input.SReadMoreRadio + label + div{
+    display: none;
+}
+input.SReadMoreRadio:checked + label + div{
+    display: block;
+}
+input.SReadMoreRadio + label{
+    text-decoration: underline;
+    cursor: pointer;
+}
+input.SReadMoreRadio:checked + label
+{
+    display: none;
+}
+
+
